@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<section id="game">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>The Game</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-12 text-center">
+	<p>&Uuml;ber uno is not a single game, it is a continuously evolving set of games played with Uno cards. The game started about 15 years ago and the rules and variations of the game have been evolving since. When a new associate joins the plant, he/she has a very steep learning curve to catch up with the variations of the game that have evolved over the years. This website is intended to be an aid to hasten the process of learning the game.</p>
+      </div>
+    </div>
+</section>
+<section id="newcards">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2>New Cards</h2>
+      <hr class="star-primary">
+    </div>
+  </div>
+  {% for post in site.categories.newcards %}
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-md-offset-2" style="text-align: center;">
+      <img width="150" height="150" class="{{ post.card }}">
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-5">
+      <span><h4>{{ post.title }}</h4></span>
+      <p>{{ post.content }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section id="variations">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2>Variations</h2>
+      <hr class="star-primary">
+    </div>
+  </div>
+</section>
+
